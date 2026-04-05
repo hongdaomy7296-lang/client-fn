@@ -66,7 +66,7 @@ public abstract class MixinRenderBlocks {
             return;
         }
 
-        // Direct call via @Shadow — no reflection, no per-frame overhead.
+        // Direct call via @Shadow ? no reflection, no per-frame overhead.
         boolean result = this.func_147736_d(block, x, y, z, red, green, blue);
         cir.setReturnValue(result);
     }

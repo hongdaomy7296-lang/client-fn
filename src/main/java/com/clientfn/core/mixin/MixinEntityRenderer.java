@@ -65,7 +65,7 @@ public abstract class MixinEntityRenderer {
     /**
      * 1.7.10 updateLightmap always takes (float partialTicks).
      * SRG: func_78472_g(F)V  |  MCP: updateLightmap(F)V
-     * The no-arg variant does NOT exist in 1.7.10 — removed.
+     * The no-arg variant does NOT exist in 1.7.10 ? removed.
      */
     @Inject(method = {"func_78472_g(F)V", "updateLightmap(F)V"}, at = @At("HEAD"), cancellable = true, require = 0)
     private void clientfn$skipLightmapUpdate(float partialTicks, CallbackInfo ci) {
