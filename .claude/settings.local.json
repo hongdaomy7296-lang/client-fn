@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep:*)",
+      "Bash(./gradlew clean:*)",
+      "Bash(\"D:/CNE9/project/client_fn/AGENT_COMM/STATUS_BOARD.md\":*)"
+    ]
+  }
+}

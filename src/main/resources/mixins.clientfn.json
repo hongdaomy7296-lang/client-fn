@@ -1,0 +1,28 @@
+{
+  "required": false,
+  "minVersion": "0.7.11",
+  "compatibilityLevel": "JAVA_8",
+  "package": "com.clientfn.mixin",
+  "refmap": "mixins.clientfn.refmap.json",
+  "mixins": [
+    "core.MixinEntityRenderer",
+    "core.MixinMinecraft",
+    "core.MixinGuiConnectingSafety",
+    "core.MixinGuiConnectingDiag",
+    "core.MixinNetworkManagerDiagnostics",
+    "core.MixinNetworkManagerRaceFix",
+    "core.MixinGuiConnectingThreadDiag",
+    "core.MixinFontRenderer",
+    "hud.MixinGuiNewChat",
+    "hud.MixinGuiIngameHud",
+    "freelook.MixinEntityTurnInput",
+    "perf.particle.MixinEffectRenderer",
+    "perf.render.MixinRenderGlobal",
+    "perf.render.MixinRenderShadow"
+  ],
+  "client": [],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

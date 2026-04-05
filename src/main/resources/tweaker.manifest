@@ -1,0 +1,2 @@
+TweakClass=com.clientfn.core.ClientFnTweaker
+MixinConfigs=mixins.clientfn.json
