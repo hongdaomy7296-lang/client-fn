@@ -42,6 +42,10 @@ public abstract class MixinMinecraft {
             }
         }
         FreelookHandler.onClientTick((Minecraft) (Object) this);
+    }
+
+    @Inject(method = {"func_71407_l", "runTick"}, at = @At("TAIL"), require = 0)
+    private void clientfn$onRunTickTail(CallbackInfo ci) {
         PlayerFeatureController.onClientTick((Minecraft) (Object) this);
     }
 
